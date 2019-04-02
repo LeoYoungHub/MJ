@@ -1,0 +1,27 @@
+E:\Test Files\WinFormPlugin\Com.First\bin\Debug\Com.First.dll.config
+E:\Test Files\WinFormPlugin\Com.First\bin\Debug\Com.First.dll
+E:\Test Files\WinFormPlugin\Com.First\bin\Debug\Com.First.pdb
+E:\Test Files\WinFormPlugin\Com.First\bin\Debug\PlugIn.dll
+E:\Test Files\WinFormPlugin\Com.First\bin\Debug\PlugIn.pdb
+E:\Test Files\WinFormPlugin\Com.First\obj\Debug\Com.First.csprojResolveAssemblyReference.cache
+E:\Test Files\WinFormPlugin\Com.First\obj\Debug\Com.First.Form2.resources
+E:\Test Files\WinFormPlugin\Com.First\obj\Debug\Com.First.Form1.resources
+E:\Test Files\WinFormPlugin\Com.First\obj\Debug\Com.First.Properties.Resources.resources
+E:\Test Files\WinFormPlugin\Com.First\obj\Debug\Com.First.csproj.GenerateResource.Cache
+E:\Test Files\WinFormPlugin\Com.First\obj\Debug\Com.First.dll
+E:\Test Files\WinFormPlugin\Com.First\obj\Debug\Com.First.pdb
+C:\Users\繁星\Downloads\WinFormPlugin\Com.First\bin\Debug\Com.First.dll.config
+C:\Users\繁星\Downloads\WinFormPlugin\Com.First\bin\Debug\Com.First.dll
+C:\Users\繁星\Downloads\WinFormPlugin\Com.First\bin\Debug\Com.First.pdb
+C:\Users\繁星\Downloads\WinFormPlugin\Com.First\bin\Debug\PlugIn.dll
+C:\Users\繁星\Downloads\WinFormPlugin\Com.First\bin\Debug\PlugIn.pdb
+C:\Users\繁星\Downloads\WinFormPlugin\Com.First\bin\Debug\PlugIn.dll.config
+C:\Users\繁星\Downloads\WinFormPlugin\Com.First\obj\Debug\Com.First.csprojAssemblyReference.cache
+C:\Users\繁星\Downloads\WinFormPlugin\Com.First\obj\Debug\Com.First.Form2.resources
+C:\Users\繁星\Downloads\WinFormPlugin\Com.First\obj\Debug\Com.First.Form1.resources
+C:\Users\繁星\Downloads\WinFormPlugin\Com.First\obj\Debug\Com.First.Properties.Resources.resources
+C:\Users\繁星\Downloads\WinFormPlugin\Com.First\obj\Debug\Com.First.csproj.GenerateResource.cache
+C:\Users\繁星\Downloads\WinFormPlugin\Com.First\obj\Debug\Com.First.csproj.CoreCompileInputs.cache
+C:\Users\繁星\Downloads\WinFormPlugin\Com.First\obj\Debug\Com.First.csproj.CopyComplete
+C:\Users\繁星\Downloads\WinFormPlugin\Com.First\obj\Debug\Com.First.dll
+C:\Users\繁星\Downloads\WinFormPlugin\Com.First\obj\Debug\Com.First.pdb

@@ -1,0 +1,27 @@
+E:\Test Files\WinFormPlugin\WinFormPlugin\bin\Debug\WinFormPlugin.exe.config
+E:\Test Files\WinFormPlugin\WinFormPlugin\bin\Debug\WinFormPlugin.exe
+E:\Test Files\WinFormPlugin\WinFormPlugin\bin\Debug\WinFormPlugin.pdb
+E:\Test Files\WinFormPlugin\WinFormPlugin\obj\Debug\WinFormPlugin.csprojResolveAssemblyReference.cache
+E:\Test Files\WinFormPlugin\WinFormPlugin\obj\Debug\WinFormPlugin.Properties.Resources.resources
+E:\Test Files\WinFormPlugin\WinFormPlugin\obj\Debug\WinFormPlugin.csproj.GenerateResource.Cache
+E:\Test Files\WinFormPlugin\WinFormPlugin\obj\Debug\WinFormPlugin.exe
+E:\Test Files\WinFormPlugin\WinFormPlugin\obj\Debug\WinFormPlugin.pdb
+E:\Test Files\WinFormPlugin\WinFormPlugin\obj\Debug\WinFormPlugin.ChildForm.resources
+E:\Test Files\WinFormPlugin\WinFormPlugin\obj\Debug\WinFormPlugin.ParentForm.resources
+E:\Test Files\WinFormPlugin\WinFormPlugin\bin\Debug\PlugIn.dll
+E:\Test Files\WinFormPlugin\WinFormPlugin\bin\Debug\PlugIn.pdb
+C:\Users\繁星\Downloads\WinFormPlugin\WinFormPlugin\bin\Debug\WinFormPlugin.exe.config
+C:\Users\繁星\Downloads\WinFormPlugin\WinFormPlugin\bin\Debug\WinFormPlugin.exe
+C:\Users\繁星\Downloads\WinFormPlugin\WinFormPlugin\bin\Debug\WinFormPlugin.pdb
+C:\Users\繁星\Downloads\WinFormPlugin\WinFormPlugin\bin\Debug\PlugIn.dll
+C:\Users\繁星\Downloads\WinFormPlugin\WinFormPlugin\bin\Debug\PlugIn.pdb
+C:\Users\繁星\Downloads\WinFormPlugin\WinFormPlugin\bin\Debug\PlugIn.dll.config
+C:\Users\繁星\Downloads\WinFormPlugin\WinFormPlugin\obj\Debug\WinFormPlugin.csprojAssemblyReference.cache
+C:\Users\繁星\Downloads\WinFormPlugin\WinFormPlugin\obj\Debug\WinFormPlugin.ParentForm.resources
+C:\Users\繁星\Downloads\WinFormPlugin\WinFormPlugin\obj\Debug\WinFormPlugin.ChildForm.resources
+C:\Users\繁星\Downloads\WinFormPlugin\WinFormPlugin\obj\Debug\WinFormPlugin.Properties.Resources.resources
+C:\Users\繁星\Downloads\WinFormPlugin\WinFormPlugin\obj\Debug\WinFormPlugin.csproj.GenerateResource.cache
+C:\Users\繁星\Downloads\WinFormPlugin\WinFormPlugin\obj\Debug\WinFormPlugin.csproj.CoreCompileInputs.cache
+C:\Users\繁星\Downloads\WinFormPlugin\WinFormPlugin\obj\Debug\WinFormPlugin.csproj.CopyComplete
+C:\Users\繁星\Downloads\WinFormPlugin\WinFormPlugin\obj\Debug\WinFormPlugin.exe
+C:\Users\繁星\Downloads\WinFormPlugin\WinFormPlugin\obj\Debug\WinFormPlugin.pdb

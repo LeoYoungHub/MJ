@@ -1,0 +1,9 @@
+E:\temp\MJ\MJ.Main\bin\Debug\MJ.Common.dll
+E:\temp\MJ\MJ.Main\bin\Debug\MJ.Common.pdb
+E:\temp\MJ\MJ.Common\obj\Debug\MJ.Common.csproj.CoreCompileInputs.cache
+E:\temp\MJ\MJ.Common\obj\Debug\MJ.Common.csproj.CopyComplete
+E:\temp\MJ\MJ.Common\obj\Debug\MJ.Common.dll
+E:\temp\MJ\MJ.Common\obj\Debug\MJ.Common.pdb
+E:\temp\MJ\MJ.Main\bin\Debug\Lang\en-US\en-US.json
+E:\temp\MJ\MJ.Main\bin\Debug\Lang\zh-CN\zh-CN.json
+E:\temp\MJ\MJ.Common\obj\Debug\MJ.Common.csprojAssemblyReference.cache
