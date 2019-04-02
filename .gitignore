@@ -3,3 +3,8 @@
 ################################################################################
 
 /.vs/MJ/v15
+/MJ.Common/obj/Debug
+/MJ.Main
+/MJ.PlugIn.Core/obj/Debug
+/MJ.PlugIns/obj/Debug
+/MJ.DAL/obj/Debug
