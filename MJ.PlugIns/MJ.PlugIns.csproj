@@ -36,6 +36,10 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EvilDICOM">
+      <HintPath>..\MJ.Main\DLL\EvilDICOM.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
     <Reference Include="MJ.PlugIn.Core, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\MJ.Main\bin\Debug\MJ.PlugIn.Core.dll</HintPath>

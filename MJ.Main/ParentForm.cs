@@ -71,6 +71,8 @@ namespace MJ.Main
             LoadComponents();
             LoadMenuNodes();
 
+            return;
+            ;
             ChildForm login = new ChildForm();
             login.Dock = this.Dock;
             DialogResult dr = login.ShowDialog();

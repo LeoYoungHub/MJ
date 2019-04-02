@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using EvilDICOM.Core;
 using MJ.PlugIn.Core;
 
 namespace MJ.PlugIns
@@ -35,7 +37,7 @@ namespace MJ.PlugIns
 
         void AppFormContainer_FormClosing(object sender, FormClosingEventArgs e)
         {
-         
+
         }
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
@@ -69,6 +71,47 @@ namespace MJ.PlugIns
             Rectangle recTab = e.Bounds;
             recTab = new Rectangle(recTab.X, recTab.Y + 4, recTab.Width, recTab.Height - 4);
             e.Graphics.DrawString(tabName, fntTab, bshFore, recTab, sftTab);
+        }
+        Dictionary<string, string> keyToGender = new Dictionary<string, string>()
+        {
+            { "m","男性"},
+            { "f","女性"},
+            {"o","其他" }
+        };
+
+        private string showGender(string genderCode)
+        {
+            if (keyToGender.ContainsKey(genderCode.ToLower()))
+            {
+                return keyToGender[genderCode.ToLower()];
+            }
+
+            return "null";
+        }
+
+        private async void btnLoad_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openPicker = new OpenFileDialog();
+            openPicker.InitialDirectory = AppDomain.CurrentDomain.BaseDirectory;
+            openPicker.Filter = "dcm|*.dcm";
+            openPicker.FilterIndex = 1;
+            if (openPicker.ShowDialog() == DialogResult.OK)
+            {
+                lblDcmPath.Text = openPicker.FileName;
+                var dcm = await DICOMObject.ReadAsync(openPicker.FileName);
+
+                var dcmName = dcm.FindFirst("00100010");
+                lblName.Text = dcmName == null ? "null" : dcmName.DData.ToString();
+
+                var dcmID = dcm.FindFirst("00100020");
+                lblID.Text = dcmID == null ? "null" : dcmID.DData.ToString();
+
+                var dcmAge = dcm.FindFirst("00101010");
+                lblAge.Text = dcmAge == null ? "null" : dcmAge.DData.ToString();
+
+                var dcmGender = dcm.FindFirst("00100040");
+                lblGender.Text = dcmGender == null ? "null" : showGender(dcmGender.DData.ToString());
+            }
         }
     }
 }

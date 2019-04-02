@@ -30,12 +30,12 @@
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPatientInfo = new System.Windows.Forms.TabPage();
-            this.btnLoad = new System.Windows.Forms.Button();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.btnLoad = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.lblSex = new System.Windows.Forms.Label();
+            this.lblGender = new System.Windows.Forms.Label();
             this.lblAge = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -47,10 +47,6 @@
             this.label10 = new System.Windows.Forms.Label();
             this.tabPuncture = new System.Windows.Forms.TabPage();
             this.tabOrientation = new System.Windows.Forms.TabPage();
-            this.tabVisualAnalysis = new System.Windows.Forms.TabPage();
-            this.tabBeamShotAbutment = new System.Windows.Forms.TabPage();
-            this.tabBeamShot = new System.Windows.Forms.TabPage();
-            this.tabTreatOver = new System.Windows.Forms.TabPage();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.button1 = new System.Windows.Forms.Button();
             this.label11 = new System.Windows.Forms.Label();
@@ -74,6 +70,13 @@
             this.numericUpDown4 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown5 = new System.Windows.Forms.NumericUpDown();
             this.numericUpDown6 = new System.Windows.Forms.NumericUpDown();
+            this.tabVisualAnalysis = new System.Windows.Forms.TabPage();
+            this.tabBeamShotAbutment = new System.Windows.Forms.TabPage();
+            this.tabBeamShot = new System.Windows.Forms.TabPage();
+            this.tabTreatOver = new System.Windows.Forms.TabPage();
+            this.lblDcmPath = new System.Windows.Forms.Label();
+            this.label21 = new System.Windows.Forms.Label();
+            this.lblID = new System.Windows.Forms.Label();
             this.tabControl1.SuspendLayout();
             this.tabPatientInfo.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
@@ -118,42 +121,27 @@
             this.tabPatientInfo.Location = new System.Drawing.Point(124, 4);
             this.tabPatientInfo.Name = "tabPatientInfo";
             this.tabPatientInfo.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPatientInfo.Size = new System.Drawing.Size(1030, 685);
+            this.tabPatientInfo.Size = new System.Drawing.Size(1138, 736);
             this.tabPatientInfo.TabIndex = 0;
             this.tabPatientInfo.Text = "病人信息";
-            // 
-            // btnLoad
-            // 
-            this.btnLoad.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.btnLoad.FlatAppearance.BorderSize = 0;
-            this.btnLoad.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnLoad.ForeColor = System.Drawing.Color.Black;
-            this.btnLoad.Location = new System.Drawing.Point(560, 320);
-            this.btnLoad.Margin = new System.Windows.Forms.Padding(20);
-            this.btnLoad.Name = "btnLoad";
-            this.btnLoad.Size = new System.Drawing.Size(218, 44);
-            this.btnLoad.TabIndex = 1;
-            this.btnLoad.Text = "计划载入";
-            this.btnLoad.UseVisualStyleBackColor = false;
             // 
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.BackColor = System.Drawing.Color.SkyBlue;
-            this.tableLayoutPanel1.ColumnCount = 6;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 120F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 100F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 258F));
-            this.tableLayoutPanel1.Controls.Add(this.btnLoad, 5, 5);
+            this.tableLayoutPanel1.ColumnCount = 8;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 80F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle());
+            this.tableLayoutPanel1.Controls.Add(this.btnLoad, 0, 5);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.lblName, 1, 0);
             this.tableLayoutPanel1.Controls.Add(this.label2, 2, 0);
-            this.tableLayoutPanel1.Controls.Add(this.lblSex, 3, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lblGender, 3, 0);
             this.tableLayoutPanel1.Controls.Add(this.lblAge, 5, 0);
             this.tableLayoutPanel1.Controls.Add(this.label3, 4, 0);
             this.tableLayoutPanel1.Controls.Add(this.label4, 0, 1);
@@ -163,6 +151,9 @@
             this.tableLayoutPanel1.Controls.Add(this.label8, 2, 2);
             this.tableLayoutPanel1.Controls.Add(this.label9, 2, 3);
             this.tableLayoutPanel1.Controls.Add(this.label10, 2, 4);
+            this.tableLayoutPanel1.Controls.Add(this.lblDcmPath, 2, 5);
+            this.tableLayoutPanel1.Controls.Add(this.label21, 6, 0);
+            this.tableLayoutPanel1.Controls.Add(this.lblID, 7, 0);
             this.tableLayoutPanel1.Location = new System.Drawing.Point(104, 41);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 6;
@@ -172,9 +163,27 @@
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 60F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
             this.tableLayoutPanel1.Size = new System.Drawing.Size(798, 384);
             this.tableLayoutPanel1.TabIndex = 0;
+            // 
+            // btnLoad
+            // 
+            this.btnLoad.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnLoad.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.tableLayoutPanel1.SetColumnSpan(this.btnLoad, 2);
+            this.btnLoad.FlatAppearance.BorderSize = 0;
+            this.btnLoad.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnLoad.ForeColor = System.Drawing.Color.Black;
+            this.btnLoad.Location = new System.Drawing.Point(20, 320);
+            this.btnLoad.Margin = new System.Windows.Forms.Padding(20);
+            this.btnLoad.Name = "btnLoad";
+            this.btnLoad.Size = new System.Drawing.Size(180, 44);
+            this.btnLoad.TabIndex = 1;
+            this.btnLoad.Text = "计划载入";
+            this.btnLoad.UseVisualStyleBackColor = false;
+            this.btnLoad.Click += new System.EventHandler(this.btnLoad_Click);
             // 
             // label1
             // 
@@ -214,18 +223,18 @@
             this.label2.Text = "性别";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblSex
+            // lblGender
             // 
-            this.lblSex.AutoSize = true;
-            this.lblSex.BackColor = System.Drawing.Color.LightSkyBlue;
-            this.lblSex.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lblSex.ForeColor = System.Drawing.Color.Black;
-            this.lblSex.Location = new System.Drawing.Point(323, 0);
-            this.lblSex.Name = "lblSex";
-            this.lblSex.Size = new System.Drawing.Size(114, 80);
-            this.lblSex.TabIndex = 3;
-            this.lblSex.Text = "label3";
-            this.lblSex.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.lblGender.AutoSize = true;
+            this.lblGender.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.lblGender.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblGender.ForeColor = System.Drawing.Color.Black;
+            this.lblGender.Location = new System.Drawing.Point(323, 0);
+            this.lblGender.Name = "lblGender";
+            this.lblGender.Size = new System.Drawing.Size(54, 80);
+            this.lblGender.TabIndex = 3;
+            this.lblGender.Text = "label3";
+            this.lblGender.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // lblAge
             // 
@@ -233,9 +242,9 @@
             this.lblAge.BackColor = System.Drawing.Color.LightSkyBlue;
             this.lblAge.Dock = System.Windows.Forms.DockStyle.Fill;
             this.lblAge.ForeColor = System.Drawing.Color.Black;
-            this.lblAge.Location = new System.Drawing.Point(543, 0);
+            this.lblAge.Location = new System.Drawing.Point(483, 0);
             this.lblAge.Name = "lblAge";
-            this.lblAge.Size = new System.Drawing.Size(252, 80);
+            this.lblAge.Size = new System.Drawing.Size(54, 80);
             this.lblAge.TabIndex = 4;
             this.lblAge.Text = "label3";
             this.lblAge.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -246,7 +255,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label3.ForeColor = System.Drawing.Color.MediumBlue;
-            this.label3.Location = new System.Drawing.Point(443, 0);
+            this.label3.Location = new System.Drawing.Point(383, 0);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(94, 80);
             this.label3.TabIndex = 5;
@@ -257,12 +266,12 @@
             // 
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.MediumBlue;
-            this.tableLayoutPanel1.SetColumnSpan(this.label4, 6);
+            this.tableLayoutPanel1.SetColumnSpan(this.label4, 8);
             this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
             this.label4.ForeColor = System.Drawing.Color.White;
             this.label4.Location = new System.Drawing.Point(3, 80);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(792, 40);
+            this.label4.Size = new System.Drawing.Size(534, 40);
             this.label4.TabIndex = 6;
             this.label4.Text = "出束计划";
             this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -321,7 +330,7 @@
             this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(223, 120);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(572, 60);
+            this.label8.Size = new System.Drawing.Size(314, 60);
             this.label8.TabIndex = 10;
             this.label8.Text = "label8";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -335,7 +344,7 @@
             this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(223, 180);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(572, 60);
+            this.label9.Size = new System.Drawing.Size(314, 60);
             this.label9.TabIndex = 11;
             this.label9.Text = "label9";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -349,7 +358,7 @@
             this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(223, 240);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(572, 60);
+            this.label10.Size = new System.Drawing.Size(314, 60);
             this.label10.TabIndex = 12;
             this.label10.Text = "label10";
             this.label10.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -360,7 +369,7 @@
             this.tabPuncture.Location = new System.Drawing.Point(124, 4);
             this.tabPuncture.Name = "tabPuncture";
             this.tabPuncture.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPuncture.Size = new System.Drawing.Size(1030, 685);
+            this.tabPuncture.Size = new System.Drawing.Size(1138, 736);
             this.tabPuncture.TabIndex = 1;
             this.tabPuncture.Text = "辅助穿刺";
             // 
@@ -373,42 +382,6 @@
             this.tabOrientation.Size = new System.Drawing.Size(1138, 736);
             this.tabOrientation.TabIndex = 2;
             this.tabOrientation.Text = "机械定位";
-            // 
-            // tabVisualAnalysis
-            // 
-            this.tabVisualAnalysis.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.tabVisualAnalysis.Location = new System.Drawing.Point(124, 4);
-            this.tabVisualAnalysis.Name = "tabVisualAnalysis";
-            this.tabVisualAnalysis.Size = new System.Drawing.Size(1030, 685);
-            this.tabVisualAnalysis.TabIndex = 3;
-            this.tabVisualAnalysis.Text = "视觉分析";
-            // 
-            // tabBeamShotAbutment
-            // 
-            this.tabBeamShotAbutment.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.tabBeamShotAbutment.Location = new System.Drawing.Point(124, 4);
-            this.tabBeamShotAbutment.Name = "tabBeamShotAbutment";
-            this.tabBeamShotAbutment.Size = new System.Drawing.Size(1030, 685);
-            this.tabBeamShotAbutment.TabIndex = 4;
-            this.tabBeamShotAbutment.Text = "束流针对接";
-            // 
-            // tabBeamShot
-            // 
-            this.tabBeamShot.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.tabBeamShot.Location = new System.Drawing.Point(124, 4);
-            this.tabBeamShot.Name = "tabBeamShot";
-            this.tabBeamShot.Size = new System.Drawing.Size(1030, 685);
-            this.tabBeamShot.TabIndex = 5;
-            this.tabBeamShot.Text = "出束控制";
-            // 
-            // tabTreatOver
-            // 
-            this.tabTreatOver.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.tabTreatOver.Location = new System.Drawing.Point(124, 4);
-            this.tabTreatOver.Name = "tabTreatOver";
-            this.tabTreatOver.Size = new System.Drawing.Size(1030, 685);
-            this.tabTreatOver.TabIndex = 6;
-            this.tabTreatOver.Text = "结束治疗";
             // 
             // tableLayoutPanel2
             // 
@@ -719,6 +692,80 @@
             this.numericUpDown6.TabIndex = 18;
             this.numericUpDown6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // tabVisualAnalysis
+            // 
+            this.tabVisualAnalysis.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.tabVisualAnalysis.Location = new System.Drawing.Point(124, 4);
+            this.tabVisualAnalysis.Name = "tabVisualAnalysis";
+            this.tabVisualAnalysis.Size = new System.Drawing.Size(1138, 736);
+            this.tabVisualAnalysis.TabIndex = 3;
+            this.tabVisualAnalysis.Text = "视觉分析";
+            // 
+            // tabBeamShotAbutment
+            // 
+            this.tabBeamShotAbutment.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.tabBeamShotAbutment.Location = new System.Drawing.Point(124, 4);
+            this.tabBeamShotAbutment.Name = "tabBeamShotAbutment";
+            this.tabBeamShotAbutment.Size = new System.Drawing.Size(1138, 736);
+            this.tabBeamShotAbutment.TabIndex = 4;
+            this.tabBeamShotAbutment.Text = "束流针对接";
+            // 
+            // tabBeamShot
+            // 
+            this.tabBeamShot.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.tabBeamShot.Location = new System.Drawing.Point(124, 4);
+            this.tabBeamShot.Name = "tabBeamShot";
+            this.tabBeamShot.Size = new System.Drawing.Size(1138, 736);
+            this.tabBeamShot.TabIndex = 5;
+            this.tabBeamShot.Text = "出束控制";
+            // 
+            // tabTreatOver
+            // 
+            this.tabTreatOver.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.tabTreatOver.Location = new System.Drawing.Point(124, 4);
+            this.tabTreatOver.Name = "tabTreatOver";
+            this.tabTreatOver.Size = new System.Drawing.Size(1138, 736);
+            this.tabTreatOver.TabIndex = 6;
+            this.tabTreatOver.Text = "结束治疗";
+            // 
+            // lblDcmPath
+            // 
+            this.lblDcmPath.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.tableLayoutPanel1.SetColumnSpan(this.lblDcmPath, 4);
+            this.lblDcmPath.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.lblDcmPath.Location = new System.Drawing.Point(223, 300);
+            this.lblDcmPath.Name = "lblDcmPath";
+            this.lblDcmPath.Size = new System.Drawing.Size(314, 84);
+            this.lblDcmPath.TabIndex = 13;
+            this.lblDcmPath.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
+            // label21
+            // 
+            this.label21.AutoSize = true;
+            this.label21.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label21.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.label21.Location = new System.Drawing.Point(543, 0);
+            this.label21.Name = "label21";
+            this.label21.Size = new System.Drawing.Size(94, 80);
+            this.label21.TabIndex = 14;
+            this.label21.Text = "编号";
+            this.label21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // lblID
+            // 
+            this.lblID.AutoSize = true;
+            this.lblID.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.lblID.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblID.ForeColor = System.Drawing.Color.Black;
+            this.lblID.Location = new System.Drawing.Point(689, 0);
+            this.lblID.Name = "lblID";
+            this.lblID.Size = new System.Drawing.Size(47, 12);
+            this.lblID.TabIndex = 15;
+            this.lblID.Text = "label22";
+            this.lblID.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // Treat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -768,7 +815,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label lblSex;
+        private System.Windows.Forms.Label lblGender;
         private System.Windows.Forms.Label lblAge;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnLoad;
@@ -802,6 +849,9 @@
         private System.Windows.Forms.NumericUpDown numericUpDown4;
         private System.Windows.Forms.NumericUpDown numericUpDown5;
         private System.Windows.Forms.NumericUpDown numericUpDown6;
+        private System.Windows.Forms.Label lblDcmPath;
+        private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Label lblID;
     }
 }
 

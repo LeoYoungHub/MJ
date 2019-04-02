@@ -33,6 +33,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EvilDICOM, Version=2.0.3.0, Culture=neutral, PublicKeyToken=236d7078f2290bcd, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>DLL\EvilDICOM.dll</HintPath>
+    </Reference>
     <Reference Include="IrisSkin4">
       <HintPath>DLL\IrisSkin4.dll</HintPath>
     </Reference>
@@ -127,6 +131,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DLL\EvilDICOM.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <Content Include="DLL\IrisSkin4.dll" />
     <Content Include="DLL\log4net.dll" />
     <Content Include="DLL\Newtonsoft.Json.dll" />
