@@ -39,6 +39,18 @@ namespace MJ.Main
         {
             List<Permission> permissions = PermissionDAL.Instance.GetPermissions();
 
+            if (permissions.Count == 0)
+            {
+                PermissionDAL.Instance.SavePermission(new Permission()
+                {
+                    Level = 0,
+                    Password = "admin",
+                    UserName = "admin"
+                });
+
+                permissions = PermissionDAL.Instance.GetPermissions();
+            }
+
             string userName = txtUserName.Text;
             string password = txtPassword.Text;
 

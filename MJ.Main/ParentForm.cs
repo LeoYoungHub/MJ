@@ -12,6 +12,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MJ.PlugIn.Core;
 using MJ.Common;
+using MJ.DAL;
+using MJ.DAL.Model;
 
 namespace MJ.Main
 {
@@ -69,14 +71,14 @@ namespace MJ.Main
             LoadComponents();
             LoadMenuNodes();
 
-            //ChildForm login = new ChildForm();
-            //login.Dock = this.Dock;
-            //DialogResult dr = login.ShowDialog();
-            //if (dr != DialogResult.OK)
-            //{
-            //    this.Close();
-            //}
-            //login.Dispose();
+            ChildForm login = new ChildForm();
+            login.Dock = this.Dock;
+            DialogResult dr = login.ShowDialog();
+            if (dr != DialogResult.OK)
+            {
+                this.Close();
+            }
+            login.Dispose();
         }
 
         private void LoadComponents()

@@ -1,8 +1,0 @@
-E:\temp\MJ\MJ.Main\bin\Debug\MJ.DAL.dll.config
-E:\temp\MJ\MJ.Main\bin\Debug\MJ.DAL.dll
-E:\temp\MJ\MJ.Main\bin\Debug\MJ.DAL.pdb
-E:\temp\MJ\MJ.DAL\obj\Debug\MJ.DAL.csproj.CoreCompileInputs.cache
-E:\temp\MJ\MJ.DAL\obj\Debug\MJ.DAL.csproj.CopyComplete
-E:\temp\MJ\MJ.DAL\obj\Debug\MJ.DAL.dll
-E:\temp\MJ\MJ.DAL\obj\Debug\MJ.DAL.pdb
-E:\temp\MJ\MJ.DAL\obj\Debug\MJ.DAL.csprojAssemblyReference.cache
